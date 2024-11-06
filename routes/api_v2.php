@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UrlController;
-use App\Http\Controllers\Api\V1\AuthController;
+use App\Http\Controllers\Api\V2\UrlController;
+use App\Http\Controllers\Api\V2\AuthController;
 
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);

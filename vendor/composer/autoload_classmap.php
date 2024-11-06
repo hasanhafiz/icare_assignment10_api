@@ -6,13 +6,11 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'App\\Http\\Controllers\\Api\\V1\\AuthController' => $baseDir . '/app/Http/Controllers/Api/V1/AuthController.php',
-    'App\\Http\\Controllers\\Api\\V1\\PostController' => $baseDir . '/app/Http/Controllers/Api/V1/PostController.php',
+    'App\\Http\\Controllers\\Api\\V2\\AuthController' => $baseDir . '/app/Http/Controllers/Api/V2/AuthController.php',
     'App\\Http\\Controllers\\Api\\V2\\PostController' => $baseDir . '/app/Http/Controllers/Api/V2/PostController.php',
     'App\\Http\\Controllers\\CategoryController' => $baseDir . '/app/Http/Controllers/CategoryController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Controllers\\PostController' => $baseDir . '/app/Http/Controllers/PostController.php',
-    'App\\Http\\Controllers\\UrlController' => $baseDir . '/app/Http/Controllers/UrlController.php',
     'App\\Http\\Middleware\\BanDeleteMethod' => $baseDir . '/app/Http/Middleware/BanDeleteMethod.php',
     'App\\Http\\Middleware\\BanDeleteMethodEx' => $baseDir . '/app/Http/Middleware/BanDeleteMethodEx.php',
     'App\\Http\\Middleware\\CheckAdminUser' => $baseDir . '/app/Http/Middleware/CheckAdminUser.php',
