@@ -6,11 +6,13 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Http\\Controllers\\Api\\V1\\AuthController' => $baseDir . '/app/Http/Controllers/Api/V1/AuthController.php',
     'App\\Http\\Controllers\\Api\\V1\\PostController' => $baseDir . '/app/Http/Controllers/Api/V1/PostController.php',
     'App\\Http\\Controllers\\Api\\V2\\PostController' => $baseDir . '/app/Http/Controllers/Api/V2/PostController.php',
     'App\\Http\\Controllers\\CategoryController' => $baseDir . '/app/Http/Controllers/CategoryController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Controllers\\PostController' => $baseDir . '/app/Http/Controllers/PostController.php',
+    'App\\Http\\Controllers\\UrlController' => $baseDir . '/app/Http/Controllers/UrlController.php',
     'App\\Http\\Middleware\\BanDeleteMethod' => $baseDir . '/app/Http/Middleware/BanDeleteMethod.php',
     'App\\Http\\Middleware\\BanDeleteMethodEx' => $baseDir . '/app/Http/Middleware/BanDeleteMethodEx.php',
     'App\\Http\\Middleware\\CheckAdminUser' => $baseDir . '/app/Http/Middleware/CheckAdminUser.php',
@@ -22,6 +24,7 @@ return array(
     'App\\Http\\Resources\\PostResource' => $baseDir . '/app/Http/Resources/PostResource.php',
     'App\\Models\\Category' => $baseDir . '/app/Models/Category.php',
     'App\\Models\\Post' => $baseDir . '/app/Models/Post.php',
+    'App\\Models\\Url' => $baseDir . '/app/Models/Url.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Rules\\CustomGenderRule' => $baseDir . '/app/Rules/CustomGenderRule.php',

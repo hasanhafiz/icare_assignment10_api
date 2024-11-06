@@ -20,13 +20,19 @@ class AuthController extends Controller
         $user = User::create( $fields ); 
         
         // now create user token
-        $token = $user->createToken( $request->input('name') );
+        // $token = $user->createToken( $request->input('name') );
         
-        return [
-            'user' => $user,
-            'token' => $token,
-            'plainTextToken' => $token->plainTextToken,
-        ];
+        // Generate a Sanctum token
+        // $token = $user->createToken('API Token')->plainTextToken;     
+        $token = $user->createToken( $request->input('name') )->plainTextToken;           
+        // return response()->json(['token' => $token], 200);        
+        return response()->json(['message' => 'User registered successfully.'], 200);        
+        
+        // return [
+        //     'user' => $user,
+        //     'token' => $token,
+        //     'plainTextToken' => $token->plainTextToken,
+        // ];
         
     }
     public function login( Request $request ) {
@@ -45,19 +51,29 @@ class AuthController extends Controller
         }
         
         // regenerate user token
-        $token = $user->createToken( $user->name );
-        
-        return [
-            'user' => $user,
-            'token' => $token,
-            'plainTextToken' => $token->plainTextToken,
-        ];
+        $token = $user->createToken( $user->name )->plainTextToken;
+        return response()->json(['token' => $token], 200);        
+
+        // return [
+        //     'user' => $user,
+        //     'token' => $token,
+        //     'plainTextToken' => $token->plainTextToken,
+        // ];
     }
     
     public function logout( Request $request ) {
         $request->user()->tokens()->delete();
-        return [
-            'message' => 'You are logged out.'
-        ];        
+        return response()->json(['message' => 'Logged out successfully'], 200);        
+        // return [
+        //     'message' => 'You are logged out.'
+        // ];        
     } 
+    
+    /**
+     * Get a User List
+     * 
+     */
+    public function userList() {
+        return User::all();
+    }
 }

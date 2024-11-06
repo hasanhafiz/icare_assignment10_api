@@ -589,11 +589,13 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
     );
 
     public static $classMap = array (
+        'App\\Http\\Controllers\\Api\\V1\\AuthController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/V1/AuthController.php',
         'App\\Http\\Controllers\\Api\\V1\\PostController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/V1/PostController.php',
         'App\\Http\\Controllers\\Api\\V2\\PostController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/V2/PostController.php',
         'App\\Http\\Controllers\\CategoryController' => __DIR__ . '/../..' . '/app/Http/Controllers/CategoryController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\PostController' => __DIR__ . '/../..' . '/app/Http/Controllers/PostController.php',
+        'App\\Http\\Controllers\\UrlController' => __DIR__ . '/../..' . '/app/Http/Controllers/UrlController.php',
         'App\\Http\\Middleware\\BanDeleteMethod' => __DIR__ . '/../..' . '/app/Http/Middleware/BanDeleteMethod.php',
         'App\\Http\\Middleware\\BanDeleteMethodEx' => __DIR__ . '/../..' . '/app/Http/Middleware/BanDeleteMethodEx.php',
         'App\\Http\\Middleware\\CheckAdminUser' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckAdminUser.php',
@@ -605,6 +607,7 @@ class ComposerStaticInit7e8c3c14ff33b199b4a0838993eb8423
         'App\\Http\\Resources\\PostResource' => __DIR__ . '/../..' . '/app/Http/Resources/PostResource.php',
         'App\\Models\\Category' => __DIR__ . '/../..' . '/app/Models/Category.php',
         'App\\Models\\Post' => __DIR__ . '/../..' . '/app/Models/Post.php',
+        'App\\Models\\Url' => __DIR__ . '/../..' . '/app/Models/Url.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Rules\\CustomGenderRule' => __DIR__ . '/../..' . '/app/Rules/CustomGenderRule.php',
