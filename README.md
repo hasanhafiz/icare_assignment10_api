@@ -101,9 +101,15 @@ Get list of short code:
 
 
 ----------------
-Get user list
+Get current loggin in user 
 
-- url: http://icare_assignment10_api.test/api/v1/users
+http://icare_assignment10_api.test/api/user
+
+
+----------------
+Get all user list
+
+- url: http://icare_assignment10_api.test/api/users
 - set method: GET 
 - No token is required for this
 - After click "Send" button, it will display list of users as JSON format 
